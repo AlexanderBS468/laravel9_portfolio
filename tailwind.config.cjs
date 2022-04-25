@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-module.export = {
+module.exports = {
   content: [
     './storage/framework/views/*.php',
     './resources/**/*.blade.php',
@@ -9,5 +9,5 @@ module.export = {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require("tailgrids/plugin")],
 }
