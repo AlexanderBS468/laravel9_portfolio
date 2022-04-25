@@ -6,16 +6,14 @@ use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class NavbarItem extends Component
+class NavbarHamburger extends Component
 {
-    public string $href = '#';
-
     /**
      * Create a new component instance.
      */
-    public function __construct(string $href)
+    public function __construct()
     {
-        $this->href = $href;
+        //
     }
 
     /**
@@ -23,6 +21,6 @@ class NavbarItem extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('layout.navbar-item');
+        return view('layout.navbar-hamburger');
     }
 }
