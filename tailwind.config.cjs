@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'media',
   content: [
     './storage/framework/views/*.php',
     './resources/**/*.blade.php',

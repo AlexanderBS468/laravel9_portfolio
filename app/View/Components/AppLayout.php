@@ -8,12 +8,14 @@ use Illuminate\View\Component;
 
 class AppLayout extends Component
 {
+    public string $themeColor = '';
+
     /**
      * Create a new component instance.
      */
-    public function __construct()
+    public function __construct(string $themeColor = '')
     {
-        //
+        $this->themeColor = $themeColor;
     }
 
     /**
